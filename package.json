@@ -1,0 +1,17 @@
+{
+  "name": "nwabase",
+  "version": "0.1.0",
+  "description": "Minimal open-source WhatsApp bot starter with an ESM plugin architecture",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@rexxhayanasi/elaina-baileys": "^1.3.10"
+  }
+}
