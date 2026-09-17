@@ -4,10 +4,10 @@
 Menolak plugin invalid dan trigger kosong/duplikat.
 
 ## Acceptance criteria
-- [ ] Command string/array dan execute function divalidasi.
-- [ ] Trigger dinormalisasi lowercase.
-- [ ] Duplicate trigger menghasilkan error terstruktur.
-- [ ] Plugin invalid tidak masuk registry.
+- [x] Command string/array dan execute function divalidasi.
+- [x] Trigger dinormalisasi lowercase.
+- [x] Duplicate trigger menghasilkan error terstruktur.
+- [x] Plugin invalid tidak masuk registry.
 
 ## Verification
 - Test cases dibuat sebelum implementasi final.

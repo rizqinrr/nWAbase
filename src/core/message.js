@@ -1,18 +1,32 @@
+const MESSAGE_WRAPPERS = new Set(['ephemeralMessage', 'viewOnceMessage', 'viewOnceMessageV2', 'viewOnceMessageV2Extension'])
+
+export function unwrapMessage(message) {
+  let current = message
+  while (current && typeof current === 'object') {
+    const wrapperType = Object.keys(current).find((key) => MESSAGE_WRAPPERS.has(key))
+    if (!wrapperType) return current
+    current = current[wrapperType]?.message ?? null
+  }
+  return current
+}
+
 export function resolveMessageText(message) {
-  if (!message || typeof message !== 'object') return ''
-  if (message.conversation) return message.conversation
-  if (message.extendedTextMessage?.text) return message.extendedTextMessage.text
-  if (message.imageMessage?.caption) return message.imageMessage.caption
-  if (message.videoMessage?.caption) return message.videoMessage.caption
-  if (message.documentMessage?.caption) return message.documentMessage.caption
-  if (message.buttonsResponseMessage?.selectedButtonId) return message.buttonsResponseMessage.selectedButtonId
-  if (message.listResponseMessage?.singleSelectReply?.selectedRowId) return message.listResponseMessage.singleSelectReply.selectedRowId
+  const unwrapped = unwrapMessage(message)
+  if (!unwrapped || typeof unwrapped !== 'object') return ''
+  if (unwrapped.conversation) return unwrapped.conversation
+  if (unwrapped.extendedTextMessage?.text) return unwrapped.extendedTextMessage.text
+  if (unwrapped.imageMessage?.caption) return unwrapped.imageMessage.caption
+  if (unwrapped.videoMessage?.caption) return unwrapped.videoMessage.caption
+  if (unwrapped.documentMessage?.caption) return unwrapped.documentMessage.caption
+  if (unwrapped.buttonsResponseMessage?.selectedButtonId) return unwrapped.buttonsResponseMessage.selectedButtonId
+  if (unwrapped.listResponseMessage?.singleSelectReply?.selectedRowId) return unwrapped.listResponseMessage.singleSelectReply.selectedRowId
   return ''
 }
 
 export function resolveMessageType(message) {
-  if (!message || typeof message !== 'object') return null
-  const keys = Object.keys(message).filter((key) => !key.startsWith('contextInfo'))
+  const unwrapped = unwrapMessage(message)
+  if (!unwrapped || typeof unwrapped !== 'object') return null
+  const keys = Object.keys(unwrapped).filter((key) => !key.startsWith('contextInfo'))
   if (keys.length === 1) return keys[0]
   const primary = keys.find((key) =>
     ['conversation', 'extendedTextMessage', 'imageMessage', 'videoMessage', 'documentMessage'].includes(key)
@@ -22,7 +36,7 @@ export function resolveMessageType(message) {
 
 export function normalizeMessage(rawMessage, options = {}) {
   const isEnvelope = rawMessage && typeof rawMessage === 'object' && 'key' in rawMessage
-  const message = isEnvelope ? rawMessage.message ?? null : rawMessage ?? null
+  const message = isEnvelope ? unwrapMessage(rawMessage.message ?? null) : unwrapMessage(rawMessage ?? null)
   const key = rawMessage?.key ?? {}
   const chat = key.remoteJid ?? null
   const isGroup = typeof chat === 'string' && chat.endsWith('@g.us')

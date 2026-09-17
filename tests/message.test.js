@@ -6,7 +6,8 @@ import {
   captionMessage,
   groupTextMessage,
   privateTextMessage,
-  quotedMessage
+  quotedMessage,
+  wrappedTextMessage
 } from './fixtures/messages.js'
 
 test('normalizes a private text message', () => {
@@ -31,6 +32,13 @@ test('normalizes a group message with mentions', () => {
   assert.equal(message.sender, '6282222222222@s.whatsapp.net')
   assert.equal(message.text, 'Halo @6283333333333')
   assert.deepEqual(message.mentions, ['6283333333333@s.whatsapp.net'])
+})
+
+test('unwraps ephemeral and view-once messages', () => {
+  const message = normalizeMessage(wrappedTextMessage)
+
+  assert.equal(message.type, 'extendedTextMessage')
+  assert.equal(message.text, 'Pesan wrapped')
 })
 
 test('extracts media caption and mentions from contextInfo', () => {

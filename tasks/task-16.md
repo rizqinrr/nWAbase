@@ -4,9 +4,9 @@
 Mengunci API plugin publik nWAbase.
 
 ## Acceptance criteria
-- [ ] Default export object, command, execute, metadata, dan context didokumentasikan.
-- [ ] Alias dan guard yang didukung tercatat.
-- [ ] `customPrefix` tidak termasuk kontrak MVP.
+- [x] Default export object, command, execute, metadata, dan context didokumentasikan.
+- [x] Alias dan guard yang didukung tercatat.
+- [x] `customPrefix` tidak termasuk kontrak MVP.
 
 ## Verification
 - Review contoh kontrak.

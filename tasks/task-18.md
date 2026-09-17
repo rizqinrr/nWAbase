@@ -4,10 +4,10 @@
 Memuat plugin ESM dari seluruh subfolder `plugins/`.
 
 ## Acceptance criteria
-- [ ] File `.js` ditemukan secara rekursif.
-- [ ] Default export dimuat.
-- [ ] Metadata plugin disimpan.
-- [ ] Error satu plugin tidak menghentikan scan lainnya.
+- [x] File `.js` ditemukan secara rekursif.
+- [x] Default export dimuat.
+- [x] Metadata plugin disimpan.
+- [x] Error satu plugin tidak menghentikan scan lainnya.
 
 ## Verification
 - Jalankan loader pada fixture plugin.

@@ -4,10 +4,10 @@
 Menguji plugin valid, invalid, alias, nested folder, dan duplicate trigger.
 
 ## Acceptance criteria
-- [ ] Plugin valid terdaftar.
-- [ ] Plugin invalid dilewati.
-- [ ] Alias terdaftar.
-- [ ] Duplicate tidak merusak registry sebelumnya.
+- [x] Plugin valid terdaftar.
+- [x] Plugin invalid dilewati.
+- [x] Alias terdaftar.
+- [x] Duplicate tidak merusak registry sebelumnya.
 
 ## Verification
 - `npm test -- tests/plugins.test.js`

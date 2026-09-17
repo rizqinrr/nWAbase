@@ -100,26 +100,26 @@ T01 docs baseline
 
 ## Task Index
 
-- [ ] T01 — Bekukan baseline spesifikasi
-- [ ] T02 — Tetapkan metadata package
-- [ ] T03 — Buat folder skeleton dan aturan Git
-- [ ] T04 — Buat `.env.example`
-- [ ] T05 — Definisikan kontrak config parser
-- [ ] T06 — Implementasi dan test config parser
-- [ ] T07 — Definisikan kontrak utilitas umum
-- [ ] T08 — Implementasi utilitas umum
-- [ ] T09 — Test utilitas umum
-- [ ] T10 — Definisikan kontrak database aplikasi
-- [ ] T11 — Implementasi SQLite key-value
-- [ ] T12 — Test SQLite key-value
-- [ ] T13 — Definisikan bentuk normalized message
-- [ ] T14 — Implementasi message normalizer
-- [ ] T15 — Test message normalizer
-- [ ] T16 — Definisikan kontrak plugin
-- [ ] T17 — Implementasi validasi plugin dan trigger
-- [ ] T18 — Implementasi recursive plugin loader
-- [ ] T19 — Test plugin validation dan loader
-- [ ] T20 — Implementasi atomic reload dan watcher opt-in
+- [x] T01 — Bekukan baseline spesifikasi
+- [x] T02 — Tetapkan metadata package
+- [x] T03 — Buat folder skeleton dan aturan Git
+- [x] T04 — Buat `.env.example`
+- [x] T05 — Definisikan kontrak config parser
+- [x] T06 — Implementasi dan test config parser
+- [x] T07 — Definisikan kontrak utilitas umum
+- [x] T08 — Implementasi utilitas umum
+- [x] T09 — Test utilitas umum
+- [x] T10 — Definisikan kontrak database aplikasi
+- [x] T11 — Implementasi SQLite key-value
+- [x] T12 — Test SQLite key-value
+- [x] T13 — Definisikan bentuk normalized message
+- [x] T14 — Implementasi message normalizer
+- [x] T15 — Test message normalizer
+- [x] T16 — Definisikan kontrak plugin
+- [x] T17 — Implementasi validasi plugin dan trigger
+- [x] T18 — Implementasi recursive plugin loader
+- [x] T19 — Test plugin validation dan loader
+- [x] T20 — Implementasi atomic reload dan watcher opt-in
 - [ ] T21 — Implementasi parser command teks
 - [ ] T22 — Implementasi dispatcher plugin
 - [ ] T23 — Implementasi owner/group/admin guards

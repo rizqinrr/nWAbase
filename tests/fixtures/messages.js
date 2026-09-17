@@ -42,6 +42,27 @@ export const captionMessage = {
   }
 }
 
+export const wrappedTextMessage = {
+  key: {
+    id: 'wrapped-1',
+    remoteJid: '6281111111111@s.whatsapp.net',
+    fromMe: false
+  },
+  message: {
+    ephemeralMessage: {
+      message: {
+        viewOnceMessage: {
+          message: {
+            extendedTextMessage: {
+              text: 'Pesan wrapped'
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 export const quotedMessage = {
   key: {
     id: 'quoted-1',

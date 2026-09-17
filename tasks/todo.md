@@ -31,12 +31,12 @@ Status: in progress
 - [x] T14 — Implementasi message normalizer (`task-14.md`)
 - [x] T15 — Test message normalizer (`task-15.md`)
 - [x] Checkpoint E — Review message API
-- [ ] T16 — Definisikan kontrak plugin (`task-16.md`)
-- [ ] T17 — Implementasi validasi plugin dan trigger (`task-17.md`)
-- [ ] T18 — Implementasi recursive plugin loader (`task-18.md`)
-- [ ] T19 — Test plugin validation dan loader (`task-19.md`)
-- [ ] T20 — Implementasi atomic reload dan watcher opt-in (`task-20.md`)
-- [ ] Checkpoint F — Review plugin platform
+- [x] T16 — Definisikan kontrak plugin (`task-16.md`)
+- [x] T17 — Implementasi validasi plugin dan trigger (`task-17.md`)
+- [x] T18 — Implementasi recursive plugin loader (`task-18.md`)
+- [x] T19 — Test plugin validation dan loader (`task-19.md`)
+- [x] T20 — Implementasi atomic reload dan watcher opt-in (`task-20.md`)
+- [x] Checkpoint F — Review plugin platform
 - [ ] T21 — Implementasi parser command teks (`task-21.md`)
 - [ ] T22 — Implementasi dispatcher plugin (`task-22.md`)
 - [ ] T23 — Implementasi owner/group/admin guards (`task-23.md`)

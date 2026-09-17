@@ -10,9 +10,12 @@ import {
   sleep
 } from '../src/utils/index.js'
 
-test('normalizes phone numbers and preserves JIDs', () => {
+test('normalizes phone numbers and preserves supported JIDs', () => {
   assert.equal(normalizeJid(' 6281234567890 '), '6281234567890@s.whatsapp.net')
   assert.equal(normalizeJid('6281234567890@s.whatsapp.net'), '6281234567890@s.whatsapp.net')
+  assert.equal(normalizeJid('120363000000000000@g.us'), '120363000000000000@g.us')
+  assert.equal(normalizeJid('attacker@example.com'), null)
+  assert.equal(normalizeJid('invalid@arbitrary-domain'), null)
   assert.equal(normalizeJid(''), null)
   assert.equal(normalizeJid(null), null)
 })

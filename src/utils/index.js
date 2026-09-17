@@ -1,11 +1,12 @@
 const USER_JID_SUFFIX = '@s.whatsapp.net'
+const SUPPORTED_JID_PATTERN = /^\d+(?::\d+)?@(s\.whatsapp\.net|g\.us|lid)$/
 
 export function normalizeJid(input) {
   if (input === null || input === undefined) return null
 
   const value = String(input).trim()
   if (!value) return null
-  if (value.includes('@')) return value
+  if (value.includes('@')) return SUPPORTED_JID_PATTERN.test(value) ? value : null
 
   const number = value.replace(/[^0-9]/g, '')
   return number ? `${number}${USER_JID_SUFFIX}` : null
