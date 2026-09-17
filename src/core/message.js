@@ -1,5 +1,28 @@
 const MESSAGE_WRAPPERS = new Set(['ephemeralMessage', 'viewOnceMessage', 'viewOnceMessageV2', 'viewOnceMessageV2Extension'])
 
+export function extractInteractiveCommand(message) {
+  const unwrapped = unwrapMessage(message)
+  if (!unwrapped || typeof unwrapped !== 'object') return null
+
+  const buttonId = unwrapped.buttonsResponseMessage?.selectedButtonId
+  if (typeof buttonId === 'string' && buttonId.trim()) return buttonId.trim()
+
+  const selectedRowId = unwrapped.listResponseMessage?.singleSelectReply?.selectedRowId
+  if (typeof selectedRowId === 'string' && selectedRowId.trim()) return selectedRowId.trim()
+
+  const paramsJson = unwrapped.interactiveResponseMessage?.nativeFlowResponseMessage?.paramsJson
+  if (typeof paramsJson !== 'string') return null
+  try {
+    const params = JSON.parse(paramsJson)
+    const command = params?.command ?? params?.id
+    return typeof command === 'string' && command.trim() ? command.trim() : null
+  } catch {
+    return null
+  }
+}
+
+
+
 export function unwrapMessage(message) {
   let current = message
   while (current && typeof current === 'object') {
@@ -44,6 +67,7 @@ export function normalizeMessage(rawMessage, options = {}) {
   const fromMe = Boolean(key.fromMe)
   const type = resolveMessageType(message)
   const txt = resolveMessageText(message)
+  const interactiveCommand = extractInteractiveCommand(message)
   const content = type ? message?.[type] : null
   const contextInfo = content?.contextInfo ?? {}
   const mentions = Array.isArray(contextInfo.mentionedJid) ? contextInfo.mentionedJid : []
@@ -117,6 +141,7 @@ export function normalizeMessage(rawMessage, options = {}) {
     type,
     txt,
     text: txt,
+    interactiveCommand,
     mentions,
     quoted,
     reply,

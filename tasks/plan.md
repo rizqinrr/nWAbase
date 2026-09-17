@@ -120,11 +120,11 @@ T01 docs baseline
 - [x] T18 — Implementasi recursive plugin loader
 - [x] T19 — Test plugin validation dan loader
 - [x] T20 — Implementasi atomic reload dan watcher opt-in
-- [ ] T21 — Implementasi parser command teks
-- [ ] T22 — Implementasi dispatcher plugin
-- [ ] T23 — Implementasi owner/group/admin guards
-- [ ] T24 — Test routing dan guards
-- [ ] T25 — Implementasi interactive response routing
+- [x] T21 — Implementasi parser command teks
+- [x] T22 — Implementasi dispatcher plugin
+- [x] T23 — Implementasi owner/group/admin guards
+- [x] T24 — Test routing dan guards
+- [x] T25 — Implementasi interactive response routing
 - [ ] T26 — Tambahkan plugin contoh `ping`
 - [ ] T27 — Tambahkan plugin dry-run
 - [ ] T28 — Implementasi socket Elaina dasar

@@ -37,12 +37,12 @@ Status: in progress
 - [x] T19 — Test plugin validation dan loader (`task-19.md`)
 - [x] T20 — Implementasi atomic reload dan watcher opt-in (`task-20.md`)
 - [x] Checkpoint F — Review plugin platform
-- [ ] T21 — Implementasi parser command teks (`task-21.md`)
-- [ ] T22 — Implementasi dispatcher plugin (`task-22.md`)
-- [ ] T23 — Implementasi owner/group/admin guards (`task-23.md`)
-- [ ] T24 — Test routing dan guards (`task-24.md`)
-- [ ] T25 — Implementasi interactive response routing (`task-25.md`)
-- [ ] Checkpoint G — Review routing
+- [x] T21 — Implementasi parser command teks (`task-21.md`)
+- [x] T22 — Implementasi dispatcher plugin (`task-22.md`)
+- [x] T23 — Implementasi owner/group/admin guards (`task-23.md`)
+- [x] T24 — Test routing dan guards (`task-24.md`)
+- [x] T25 — Implementasi interactive response routing (`task-25.md`)
+- [x] Checkpoint G — Review routing
 - [ ] T26 — Tambahkan plugin contoh `ping` (`task-26.md`)
 - [ ] T27 — Tambahkan plugin dry-run (`task-27.md`)
 - [ ] Checkpoint H — Review example plugin

@@ -4,10 +4,10 @@
 Memisahkan prefix, command, args, dan text dari normalized message.
 
 ## Acceptance criteria
-- [ ] Prefix tunggal dan multi-prefix didukung.
-- [ ] Command lowercase.
-- [ ] Pesan non-prefix menghasilkan no command.
-- [ ] Whitespace ditangani konsisten.
+- [x] Prefix tunggal dan multi-prefix didukung.
+- [x] Command lowercase.
+- [x] Pesan non-prefix menghasilkan no command.
+- [x] Whitespace ditangani konsisten.
 
 ## Verification
 - Test parser pure function.

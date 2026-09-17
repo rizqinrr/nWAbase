@@ -4,10 +4,10 @@
 Mengubah button/interactive response menjadi command ID tanpa prefix.
 
 ## Acceptance criteria
-- [ ] Native flow response dibaca.
-- [ ] Button/single select response dibaca.
-- [ ] Invalid params JSON ditangani aman.
-- [ ] Hanya response yang dikenali dirutekan tanpa prefix.
+- [x] Native flow response dibaca.
+- [x] Button/single select response dibaca.
+- [x] Invalid params JSON ditangani aman.
+- [x] Hanya response yang dikenali dirutekan tanpa prefix.
 
 ## Verification
 - `npm test -- tests/interactive-routing.test.js`
