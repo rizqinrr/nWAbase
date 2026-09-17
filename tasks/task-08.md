@@ -4,10 +4,10 @@
 Mengimplementasikan helper JID, mention, sleep, dan formatter.
 
 ## Acceptance criteria
-- [ ] Nomor dapat dinormalisasi ke JID.
-- [ ] Mention dapat diekstrak.
-- [ ] `sleep` menunggu sesuai durasi.
-- [ ] Formatter tidak menghasilkan `undefined` untuk input valid.
+- [x] Nomor dapat dinormalisasi ke JID.
+- [x] Mention dapat diekstrak.
+- [x] `sleep` menunggu sesuai durasi.
+- [x] Formatter tidak menghasilkan `undefined` untuk input valid.
 
 ## Verification
 - Jalankan test utilitas setelah T09 tersedia.

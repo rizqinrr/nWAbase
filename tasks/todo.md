@@ -19,18 +19,18 @@ Status: in progress
 - [x] T05 — Definisikan kontrak config parser (`task-05.md`)
 - [x] T06 — Implementasi dan test config parser (`task-06.md`)
 - [x] Checkpoint B — Review configuration
-- [ ] T07 — Definisikan kontrak utilitas umum (`task-07.md`)
-- [ ] T08 — Implementasi utilitas umum (`task-08.md`)
-- [ ] T09 — Test utilitas umum (`task-09.md`)
-- [ ] Checkpoint C — Review utilities
-- [ ] T10 — Definisikan kontrak database aplikasi (`task-10.md`)
-- [ ] T11 — Implementasi SQLite key-value (`task-11.md`)
-- [ ] T12 — Test SQLite key-value (`task-12.md`)
-- [ ] Checkpoint D — Review persistence
-- [ ] T13 — Definisikan bentuk normalized message (`task-13.md`)
-- [ ] T14 — Implementasi message normalizer (`task-14.md`)
-- [ ] T15 — Test message normalizer (`task-15.md`)
-- [ ] Checkpoint E — Review message API
+- [x] T07 — Definisikan kontrak utilitas umum (`task-07.md`)
+- [x] T08 — Implementasi utilitas umum (`task-08.md`)
+- [x] T09 — Test utilitas umum (`task-09.md`)
+- [x] Checkpoint C — Review utilities
+- [x] T10 — Definisikan kontrak database aplikasi (`task-10.md`)
+- [x] T11 — Implementasi SQLite key-value (`task-11.md`)
+- [x] T12 — Test SQLite key-value (`task-12.md`)
+- [x] Checkpoint D — Review persistence
+- [x] T13 — Definisikan bentuk normalized message (`task-13.md`)
+- [x] T14 — Implementasi message normalizer (`task-14.md`)
+- [x] T15 — Test message normalizer (`task-15.md`)
+- [x] Checkpoint E — Review message API
 - [ ] T16 — Definisikan kontrak plugin (`task-16.md`)
 - [ ] T17 — Implementasi validasi plugin dan trigger (`task-17.md`)
 - [ ] T18 — Implementasi recursive plugin loader (`task-18.md`)

@@ -4,9 +4,9 @@
 Mengunci helper yang benar-benar umum dan bebas fitur bisnis.
 
 ## Acceptance criteria
-- [ ] Kontrak mencakup JID, mention, sleep, durasi/uptime.
-- [ ] Tidak ada helper media, HTTP, AI, atau domain bisnis.
-- [ ] Input kosong/null memiliki perilaku yang jelas.
+- [x] Kontrak mencakup JID, mention, sleep, durasi/uptime.
+- [x] Tidak ada helper media, HTTP, AI, atau domain bisnis.
+- [x] Input kosong/null memiliki perilaku yang jelas.
 
 ## Verification
 - Review daftar export.

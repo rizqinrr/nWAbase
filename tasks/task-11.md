@@ -4,10 +4,10 @@
 Menyediakan app database dengan tabel settings generik.
 
 ## Acceptance criteria
-- [ ] Direktori database dibuat otomatis.
-- [ ] WAL dan schema settings aktif.
-- [ ] `getSetting`, `setSetting`, `deleteSetting` bekerja.
-- [ ] Nilai JSON object/array/primitive didukung.
+- [x] Direktori database dibuat otomatis.
+- [x] WAL dan schema settings aktif.
+- [x] `getSetting`, `setSetting`, `deleteSetting` bekerja.
+- [x] Nilai JSON object/array/primitive didukung.
 
 ## Verification
 - Jalankan test database temporer pada T12.

@@ -4,9 +4,9 @@
 Membuktikan helper umum dan edge case-nya.
 
 ## Acceptance criteria
-- [ ] Test nomor/JID valid dan invalid.
-- [ ] Test mention dan formatter.
-- [ ] Test input kosong serta durasi nol.
+- [x] Test nomor/JID valid dan invalid.
+- [x] Test mention dan formatter.
+- [x] Test input kosong serta durasi nol.
 
 ## Verification
 - `npm test -- tests/utils.test.js`

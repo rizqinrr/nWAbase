@@ -4,10 +4,10 @@
 Menguji normalizer dengan fixture text, group, media caption, dan empty message.
 
 ## Acceptance criteria
-- [ ] Fixture private text lulus.
-- [ ] Fixture group text lulus.
-- [ ] Caption media lulus.
-- [ ] Message invalid diabaikan secara aman.
+- [x] Fixture private text lulus.
+- [x] Fixture group text lulus.
+- [x] Caption media lulus.
+- [x] Message invalid diabaikan secara aman.
 
 ## Verification
 - `npm test -- tests/message.test.js`

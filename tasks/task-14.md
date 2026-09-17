@@ -4,10 +4,10 @@
 Membuat normalizer untuk metadata dasar pesan WhatsApp.
 
 ## Acceptance criteria
-- [ ] Key diubah menjadi id/chat/sender/fromMe.
-- [ ] Group terdeteksi dari JID.
-- [ ] Tipe dan text/caption diekstrak.
-- [ ] Input tanpa message tidak menyebabkan crash.
+- [x] Key diubah menjadi id/chat/sender/fromMe.
+- [x] Group terdeteksi dari JID.
+- [x] Tipe dan text/caption diekstrak.
+- [x] Input tanpa message tidak menyebabkan crash.
 
 ## Verification
 - Jalankan test T15.

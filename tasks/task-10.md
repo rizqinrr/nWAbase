@@ -4,9 +4,9 @@
 Mengunci API SQLite app database terpisah dari auth database.
 
 ## Acceptance criteria
-- [ ] API `initDB`, `getDB`, `closeDB` didefinisikan.
-- [ ] API settings key-value didefinisikan.
-- [ ] Serialisasi JSON dan fallback dibahas.
+- [x] API `initDB`, `getDB`, `closeDB` didefinisikan.
+- [x] API settings key-value didefinisikan.
+- [x] Serialisasi JSON dan fallback dibahas.
 
 ## Verification
 - Review kontrak dan schema minimal.
