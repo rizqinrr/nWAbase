@@ -4,9 +4,9 @@
 Menyediakan template konfigurasi tanpa secret atau nomor personal.
 
 ## Acceptance criteria
-- [ ] Memuat seluruh variable PRD.
-- [ ] Nilai owner kosong atau placeholder non-valid.
-- [ ] Menjelaskan format comma-separated dan boolean.
+- [x] Memuat seluruh variable PRD.
+- [x] Nilai owner kosong atau placeholder non-valid.
+- [x] Menjelaskan format comma-separated dan boolean.
 
 ## Verification
 - Review secret scan manual.

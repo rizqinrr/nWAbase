@@ -4,10 +4,10 @@
 Membaca `.env` dan menghasilkan settings tervalidasi.
 
 ## Acceptance criteria
-- [ ] List comma-separated diparse dan whitespace dibersihkan.
-- [ ] Boolean hanya menerima nilai yang ditentukan.
-- [ ] Input invalid menghasilkan error yang dapat ditindaklanjuti.
-- [ ] Test mencakup default dan override.
+- [x] List comma-separated diparse dan whitespace dibersihkan.
+- [x] Boolean hanya menerima nilai yang ditentukan.
+- [x] Input invalid menghasilkan error yang dapat ditindaklanjuti.
+- [x] Test mencakup default dan override.
 
 ## Verification
 - `npm test -- tests/config.test.js`

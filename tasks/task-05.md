@@ -4,9 +4,9 @@
 Mengunci bentuk settings hasil environment parsing.
 
 ## Acceptance criteria
-- [ ] Kontrak mencakup bot, owner, prefix, pairing, watcher, dan path DB.
-- [ ] Default mengikuti PRD.
-- [ ] Aturan invalid boolean/list/path terdokumentasi.
+- [x] Kontrak mencakup bot, owner, prefix, pairing, watcher, dan path DB.
+- [x] Default mengikuti PRD.
+- [x] Aturan invalid boolean/list/path terdokumentasi.
 
 ## Verification
 - Review API sebelum implementasi.

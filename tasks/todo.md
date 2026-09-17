@@ -15,10 +15,10 @@ Status: in progress
 - [x] T02 — Tetapkan metadata package (`task-02.md`)
 - [x] T03 — Buat folder skeleton dan aturan Git (`task-03.md`)
 - [x] Checkpoint A — Review docs dan skeleton
-- [ ] T04 — Buat `.env.example` (`task-04.md`)
-- [ ] T05 — Definisikan kontrak config parser (`task-05.md`)
-- [ ] T06 — Implementasi dan test config parser (`task-06.md`)
-- [ ] Checkpoint B — Review configuration
+- [x] T04 — Buat `.env.example` (`task-04.md`)
+- [x] T05 — Definisikan kontrak config parser (`task-05.md`)
+- [x] T06 — Implementasi dan test config parser (`task-06.md`)
+- [x] Checkpoint B — Review configuration
 - [ ] T07 — Definisikan kontrak utilitas umum (`task-07.md`)
 - [ ] T08 — Implementasi utilitas umum (`task-08.md`)
 - [ ] T09 — Test utilitas umum (`task-09.md`)
