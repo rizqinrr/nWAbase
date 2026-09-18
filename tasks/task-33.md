@@ -4,10 +4,10 @@
 Menguji alur socket event sampai plugin tanpa akun WhatsApp.
 
 ## Acceptance criteria
-- [ ] Fake message dapat mencapai dispatcher.
-- [ ] `ping` menghasilkan reply.
-- [ ] Error plugin tetap terisolasi.
-- [ ] Database test tidak meninggalkan store.
+- [x] Fake message dapat mencapai dispatcher.
+- [x] `ping` menghasilkan reply.
+- [x] Error plugin tetap terisolasi.
+- [x] Database test tidak meninggalkan store.
 
 ## Verification
 - `npm test -- tests/integration.test.js`

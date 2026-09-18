@@ -4,9 +4,9 @@
 Memastikan test dan quality checks berjalan di CI.
 
 ## Acceptance criteria
-- [ ] Matrix Node 20 dan 22 tersedia.
-- [ ] CI menjalankan install, test, lint, typecheck, dan plugin dry-run.
-- [ ] Tidak ada secret yang dibutuhkan untuk test.
+- [x] Matrix Node 20 dan 22 tersedia.
+- [x] CI menjalankan install, test, lint, typecheck, dan plugin dry-run.
+- [x] Tidak ada secret yang dibutuhkan untuk test.
 
 ## Verification
 - Validasi YAML.

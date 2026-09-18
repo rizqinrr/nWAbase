@@ -4,9 +4,9 @@
 Menjelaskan alur core dan cara membuat plugin.
 
 ## Acceptance criteria
-- [ ] Struktur folder aktual cocok dengan README.
-- [ ] Kontrak plugin dan context memiliki contoh.
-- [ ] Guard, alias, watcher, dan test dijelaskan.
+- [x] Struktur folder aktual cocok dengan README.
+- [x] Kontrak plugin dan context memiliki contoh.
+- [x] Guard, alias, watcher, dan test dijelaskan.
 
 ## Verification
 - Cross-check README terhadap source.

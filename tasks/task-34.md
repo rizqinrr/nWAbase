@@ -4,9 +4,9 @@
 Menyediakan lint reproducible untuk source dan test.
 
 ## Acceptance criteria
-- [ ] ESLint terpasang sebagai devDependency.
-- [ ] Konfigurasi sesuai ESM dan Node.
-- [ ] `npm run lint` tersedia dan lulus.
+- [x] ESLint terpasang sebagai devDependency.
+- [x] Konfigurasi sesuai ESM dan Node.
+- [x] `npm run lint` tersedia dan lulus.
 
 ## Verification
 - `npm run lint`

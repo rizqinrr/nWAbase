@@ -1,12 +1,21 @@
 import assert from 'node:assert/strict'
 import { mkdtemp, rm, writeFile } from 'node:fs/promises'
+import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
 
 import { createPluginManager, createPluginRegistry } from '../src/core/plugins.js'
 
+async function waitFor(predicate, message) {
+  const deadline = Date.now() + 2000
+  while (!predicate()) {
+    assert.ok(Date.now() < deadline, message)
+    await new Promise((resolve) => setTimeout(resolve, 5))
+  }
+}
+
 test('initial load fails fast without activating a partial registry', async () => {
-  const directory = await mkdtemp(join(process.cwd(), 'tests', 'tmp-reload-'))
+  const directory = await mkdtemp(join(tmpdir(), 'nwabase-reload-'))
   await writeFile(join(directory, 'valid.js'), 'export default { command: "valid", execute() {} }')
   await writeFile(join(directory, 'broken.js'), 'export default { command: [], execute() {} }')
   const active = createPluginRegistry()
@@ -26,7 +35,7 @@ test('initial load fails fast without activating a partial registry', async () =
 })
 
 test('keeps active registry when reload candidate has an error', async () => {
-  const directory = await mkdtemp(join(process.cwd(), 'tests', 'tmp-reload-'))
+  const directory = await mkdtemp(join(tmpdir(), 'nwabase-reload-'))
   const active = createPluginRegistry()
   active.add({ command: 'active', execute() {} }, 'active.js')
   await writeFile(join(directory, 'broken.js'), 'export default { command: [], execute() {} }')
@@ -42,7 +51,7 @@ test('keeps active registry when reload candidate has an error', async () => {
 })
 
 test('swaps registry only when every plugin is valid', async () => {
-  const directory = await mkdtemp(join(process.cwd(), 'tests', 'tmp-reload-'))
+  const directory = await mkdtemp(join(tmpdir(), 'nwabase-reload-'))
   await writeFile(join(directory, 'next.js'), 'export default { command: "next", execute() {} }')
   const active = createPluginRegistry()
   active.add({ command: 'active', execute() {} }, 'active.js')
@@ -59,7 +68,7 @@ test('swaps registry only when every plugin is valid', async () => {
 })
 
 test('ignores stale reload results and results after watcher close', async () => {
-  const directory = await mkdtemp(join(process.cwd(), 'tests', 'tmp-reload-'))
+  const directory = await mkdtemp(join(tmpdir(), 'nwabase-reload-'))
   const active = createPluginRegistry()
   active.add({ command: 'active', execute() {} }, 'active.js')
   await writeFile(join(directory, 'plugin.js'), 'export default {}')
@@ -114,7 +123,7 @@ test('rejects invalid manager directory and reports watcher startup failure', ()
 })
 
 test('watcher reports reload errors without replacing active registry', async () => {
-  const directory = await mkdtemp(join(process.cwd(), 'tests', 'tmp-reload-'))
+  const directory = await mkdtemp(join(tmpdir(), 'nwabase-reload-'))
   await writeFile(join(directory, 'broken.js'), 'export default { command: [], execute() {} }')
   const errors = []
   let onChange
@@ -132,7 +141,7 @@ test('watcher reports reload errors without replacing active registry', async ()
   try {
     assert.equal(manager.startWatching(), true)
     onChange('change', 'broken.js')
-    await new Promise((resolve) => setTimeout(resolve, 30))
+    await waitFor(() => errors.length > 0, 'watcher reload did not report errors')
     assert.equal(errors[0].code, 'INVALID_COMMAND')
     assert.equal(manager.registry.size, 0)
   } finally {
@@ -164,7 +173,7 @@ test('forwards asynchronous watcher errors without crashing', () => {
 })
 
 test('watcher callback reloads with debounce and ignores events after close', async () => {
-  const directory = await mkdtemp(join(process.cwd(), 'tests', 'tmp-reload-'))
+  const directory = await mkdtemp(join(tmpdir(), 'nwabase-reload-'))
   await writeFile(join(directory, 'next.js'), 'export default { command: "next", execute() {} }')
   let onChange
   let reloadCount = 0
@@ -182,7 +191,7 @@ test('watcher callback reloads with debounce and ignores events after close', as
     assert.equal(manager.startWatching(), true)
     onChange('change', 'next.js')
     onChange('change', 'next.js')
-    await new Promise((resolve) => setTimeout(resolve, 30))
+    await waitFor(() => manager.registry.has('next'), 'watcher reload did not update registry')
     reloadCount += manager.registry.has('next') ? 1 : 0
     assert.equal(reloadCount, 1)
     manager.closeWatcher()

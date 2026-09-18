@@ -4,9 +4,9 @@
 Menyediakan typecheck JavaScript tanpa migrasi ke TypeScript.
 
 ## Acceptance criteria
-- [ ] TypeScript terpasang sebagai devDependency.
-- [ ] `jsconfig.json` atau `tsconfig.json` mengaktifkan checkJs.
-- [ ] `npm run typecheck` lulus.
+- [x] TypeScript terpasang sebagai devDependency.
+- [x] `jsconfig.json` atau `tsconfig.json` mengaktifkan checkJs.
+- [x] `npm run typecheck` lulus.
 
 ## Verification
 - `npm run typecheck`

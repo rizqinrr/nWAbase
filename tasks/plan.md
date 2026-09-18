@@ -132,12 +132,13 @@ T01 docs baseline
 - [x] T30 — Implementasi reconnect policy
 - [x] T31 — Implementasi graceful shutdown dan process errors
 - [x] Checkpoint I — Review connection lifecycle
-- [ ] T32 — Wire runtime entrypoint
-- [ ] T33 — Tambahkan integration smoke test
-- [ ] T34 — Tambahkan ESLint
-- [ ] T35 — Tambahkan TypeScript checkJs
-- [ ] T36 — Tambahkan GitHub Actions Node 20/22
-- [ ] T37 — Tulis README quick start dan konfigurasi
-- [ ] T38 — Tulis README arsitektur dan plugin guide
-- [ ] T39 — Audit keamanan dan hygiene repository
+- [x] T32 — Wire runtime entrypoint
+- [x] T33 — Tambahkan integration smoke test
+- [x] T34 — Tambahkan ESLint
+- [x] T35 — Tambahkan TypeScript checkJs
+- [x] T36 — Tambahkan GitHub Actions Node 20/22
+- [x] Checkpoint J — Review integrated runtime and quality
+- [x] T37 — Tulis README quick start dan konfigurasi
+- [x] T38 — Tulis README arsitektur dan plugin guide
+- [x] T39 — Audit keamanan dan hygiene repository
 - [ ] T40 — Uji live, aktifkan template, dan siapkan release

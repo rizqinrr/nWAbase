@@ -4,10 +4,10 @@
 Membuat pengguna baru dapat menjalankan starter.
 
 ## Acceptance criteria
-- [ ] Clone/install/env/start terdokumentasi.
-- [ ] Node version dan pairing dijelaskan.
-- [ ] Semua env variable didokumentasikan.
-- [ ] Disclaimer unofficial WhatsApp bot tersedia.
+- [x] Clone/install/env/start terdokumentasi.
+- [x] Node version dan pairing dijelaskan.
+- [x] Semua env variable didokumentasikan.
+- [x] Disclaimer unofficial WhatsApp bot tersedia.
 
 ## Verification
 - Jalankan setiap command yang didokumentasikan.

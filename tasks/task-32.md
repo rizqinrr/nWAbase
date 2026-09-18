@@ -4,10 +4,10 @@
 Menghubungkan config, DB, loader, handler, dan connection dalam entrypoint.
 
 ## Acceptance criteria
-- [ ] `src/index.js` menjadi entrypoint tunggal.
-- [ ] Plugin dimuat sebelum pesan diproses.
-- [ ] App DB diinisialisasi sekali.
-- [ ] Runtime tidak memuat fitur bisnis.
+- [x] `src/index.js` menjadi entrypoint tunggal.
+- [x] Plugin dimuat sebelum pesan diproses.
+- [x] App DB diinisialisasi sekali.
+- [x] Runtime tidak memuat fitur bisnis.
 
 ## Verification
 - `node --check src/index.js`

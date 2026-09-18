@@ -51,15 +51,15 @@ Status: in progress
 - [x] T30 — Implementasi reconnect policy (`task-30.md`)
 - [x] T31 — Implementasi graceful shutdown dan process errors (`task-31.md`)
 - [x] Checkpoint I — Review connection lifecycle
-- [ ] T32 — Wire runtime entrypoint (`task-32.md`)
-- [ ] T33 — Tambahkan integration smoke test (`task-33.md`)
-- [ ] T34 — Tambahkan ESLint (`task-34.md`)
-- [ ] T35 — Tambahkan TypeScript checkJs (`task-35.md`)
-- [ ] T36 — Tambahkan GitHub Actions Node 20/22 (`task-36.md`)
-- [ ] Checkpoint J — Review integrated runtime and quality
-- [ ] T37 — Tulis README quick start dan konfigurasi (`task-37.md`)
-- [ ] T38 — Tulis README arsitektur dan plugin guide (`task-38.md`)
-- [ ] T39 — Audit keamanan dan hygiene repository (`task-39.md`)
-- [ ] Checkpoint K — Review release candidate
+- [x] T32 — Wire runtime entrypoint (`task-32.md`)
+- [x] T33 — Tambahkan integration smoke test (`task-33.md`)
+- [x] T34 — Tambahkan ESLint (`task-34.md`)
+- [x] T35 — Tambahkan TypeScript checkJs (`task-35.md`)
+- [x] T36 — Tambahkan GitHub Actions Node 20/22 (`task-36.md`)
+- [x] Checkpoint J — Review integrated runtime and quality
+- [x] T37 — Tulis README quick start dan konfigurasi (`task-37.md`)
+- [x] T38 — Tulis README arsitektur dan plugin guide (`task-38.md`)
+- [x] T39 — Audit keamanan dan hygiene repository (`task-39.md`)
+- [x] Checkpoint K — Review release candidate
 - [ ] T40 — Uji live, aktifkan template, dan siapkan release (`task-40.md`)
 - [ ] Checkpoint L — Persetujuan commit/push/tag atau perubahan remote
