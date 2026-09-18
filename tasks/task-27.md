@@ -4,9 +4,9 @@
 Memastikan plugin example dapat divalidasi tanpa koneksi WhatsApp.
 
 ## Acceptance criteria
-- [ ] Dry-run memuat `ping`.
-- [ ] Jumlah plugin dan trigger dapat diperiksa.
-- [ ] Proses exit nonzero bila plugin invalid.
+- [x] Dry-run memuat `ping`.
+- [x] Jumlah plugin dan trigger dapat diperiksa.
+- [x] Proses exit nonzero bila plugin invalid.
 
 ## Verification
 - `npm run test:plugins`

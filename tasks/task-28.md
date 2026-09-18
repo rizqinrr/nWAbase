@@ -4,10 +4,10 @@
 Mengisolasi pembuatan socket WhatsApp dari runtime lainnya.
 
 ## Acceptance criteria
-- [ ] Auth state SQLite session digunakan.
-- [ ] Logger Pino digunakan.
-- [ ] `creds.update` terpasang.
-- [ ] Socket factory dapat diuji dengan dependency boundary.
+- [x] Auth state SQLite session digunakan.
+- [x] Logger Pino digunakan.
+- [x] `creds.update` terpasang.
+- [x] Socket factory dapat diuji dengan dependency boundary.
 
 ## Verification
 - Unit test factory dengan stub engine.

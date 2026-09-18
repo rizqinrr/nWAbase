@@ -4,10 +4,10 @@
 Menyediakan contoh plugin paling kecil dan berguna.
 
 ## Acceptance criteria
-- [ ] Plugin berada di `plugins/example/ping.js`.
-- [ ] Mengikuti kontrak resmi.
-- [ ] Membalas status dan uptime.
-- [ ] Tidak menambah dependency.
+- [x] Plugin berada di `plugins/example/ping.js`.
+- [x] Mengikuti kontrak resmi.
+- [x] Membalas status dan uptime.
+- [x] Tidak menambah dependency.
 
 ## Verification
 - Loader dapat memuat plugin.

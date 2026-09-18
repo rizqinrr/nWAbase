@@ -4,10 +4,10 @@
 Menambahkan pilihan autentikasi yang dikonfigurasi tanpa source edit.
 
 ## Acceptance criteria
-- [ ] Pairing default aktif sesuai PRD.
-- [ ] Nomor berasal dari config lalu fallback prompt.
-- [ ] QR dapat digunakan saat pairing dimatikan.
-- [ ] Custom code memiliki fallback otomatis.
+- [x] Pairing default aktif sesuai PRD.
+- [x] Nomor berasal dari config lalu fallback prompt.
+- [x] QR dapat digunakan saat pairing dimatikan.
+- [x] Custom code memiliki fallback otomatis.
 
 ## Verification
 - Test pairing branch dengan fake socket.

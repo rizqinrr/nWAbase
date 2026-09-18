@@ -125,12 +125,13 @@ T01 docs baseline
 - [x] T23 — Implementasi owner/group/admin guards
 - [x] T24 — Test routing dan guards
 - [x] T25 — Implementasi interactive response routing
-- [ ] T26 — Tambahkan plugin contoh `ping`
-- [ ] T27 — Tambahkan plugin dry-run
-- [ ] T28 — Implementasi socket Elaina dasar
-- [ ] T29 — Implementasi pairing code dan QR option
-- [ ] T30 — Implementasi reconnect policy
-- [ ] T31 — Implementasi graceful shutdown dan process errors
+- [x] T26 — Tambahkan plugin contoh `ping`
+- [x] T27 — Tambahkan plugin dry-run
+- [x] T28 — Implementasi socket Elaina dasar
+- [x] T29 — Implementasi pairing code dan QR option
+- [x] T30 — Implementasi reconnect policy
+- [x] T31 — Implementasi graceful shutdown dan process errors
+- [x] Checkpoint I — Review connection lifecycle
 - [ ] T32 — Wire runtime entrypoint
 - [ ] T33 — Tambahkan integration smoke test
 - [ ] T34 — Tambahkan ESLint

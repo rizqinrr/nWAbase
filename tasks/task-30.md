@@ -4,10 +4,10 @@
 Menangani disconnect non-logout dengan capped exponential backoff.
 
 ## Acceptance criteria
-- [ ] Delay meningkat hingga batas maksimum.
-- [ ] Logout tidak reconnect.
-- [ ] Tidak ada reconnect paralel.
-- [ ] Timer dapat dibatalkan.
+- [x] Delay meningkat hingga batas maksimum.
+- [x] Logout tidak reconnect.
+- [x] Tidak ada reconnect paralel.
+- [x] Timer dapat dibatalkan.
 
 ## Verification
 - `npm test -- tests/reconnect.test.js`

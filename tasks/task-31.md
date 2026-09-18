@@ -4,10 +4,10 @@
 Menutup socket, readline, watcher, dan database secara aman.
 
 ## Acceptance criteria
-- [ ] SIGINT/SIGTERM idempotent.
-- [ ] Resource ditutup meski salah satu close gagal.
-- [ ] Uncaught exception/rejection dicatat tanpa secret.
-- [ ] Process exit behavior terdokumentasi.
+- [x] SIGINT/SIGTERM idempotent.
+- [x] Resource ditutup meski salah satu close gagal.
+- [x] Uncaught exception/rejection dicatat tanpa secret.
+- [x] Process exit behavior terdokumentasi.
 
 ## Verification
 - Unit test shutdown dengan fake resources.

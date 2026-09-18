@@ -43,14 +43,14 @@ Status: in progress
 - [x] T24 — Test routing dan guards (`task-24.md`)
 - [x] T25 — Implementasi interactive response routing (`task-25.md`)
 - [x] Checkpoint G — Review routing
-- [ ] T26 — Tambahkan plugin contoh `ping` (`task-26.md`)
-- [ ] T27 — Tambahkan plugin dry-run (`task-27.md`)
-- [ ] Checkpoint H — Review example plugin
-- [ ] T28 — Implementasi socket Elaina dasar (`task-28.md`)
-- [ ] T29 — Implementasi pairing code dan QR option (`task-29.md`)
-- [ ] T30 — Implementasi reconnect policy (`task-30.md`)
-- [ ] T31 — Implementasi graceful shutdown dan process errors (`task-31.md`)
-- [ ] Checkpoint I — Review connection lifecycle
+- [x] T26 — Tambahkan plugin contoh `ping` (`task-26.md`)
+- [x] T27 — Tambahkan plugin dry-run (`task-27.md`)
+- [x] Checkpoint H — Review example plugin
+- [x] T28 — Implementasi socket Elaina dasar (`task-28.md`)
+- [x] T29 — Implementasi pairing code dan QR option (`task-29.md`)
+- [x] T30 — Implementasi reconnect policy (`task-30.md`)
+- [x] T31 — Implementasi graceful shutdown dan process errors (`task-31.md`)
+- [x] Checkpoint I — Review connection lifecycle
 - [ ] T32 — Wire runtime entrypoint (`task-32.md`)
 - [ ] T33 — Tambahkan integration smoke test (`task-33.md`)
 - [ ] T34 — Tambahkan ESLint (`task-34.md`)
